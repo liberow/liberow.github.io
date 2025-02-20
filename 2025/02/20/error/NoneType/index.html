@@ -19,23 +19,27 @@
   <meta name="author" content="liberow">
   <meta name="keywords" content="">
   
-    <meta name="description" content="在原项目的基础上，我们使用 Ollama 在本地部署 DeepSeek 模型，和 embedding 模型 mxbai-embed-large，来运行 Generative Agents 项目。 环境12345No LSB modules are available.Distributor ID: UbuntuDescription:    Ubuntu 22.04.5 LTSRelease:">
+    <meta name="description" content="问题描述 使用 datasets 的 load_dataset 函数从 huggingface 中加载数据集 Matthijs&#x2F;cmu-arctic-xvectors ，无法加载成功，报错 TypeError: &#39;NoneType&#39; object is not callable.  代码：   12345678from datasets import load_datas">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇">
-<meta property="og:url" content="https://liberow.github.io/2025/02/04/agent/generative_agents_local/index.html">
+<meta property="og:title" content="TypeError &#39;NoneType&#39; object is not callable">
+<meta property="og:url" content="https://liberow.github.io/2025/02/20/error/NoneType/index.html">
 <meta property="og:site_name" content="Liberow">
-<meta property="og:description" content="在原项目的基础上，我们使用 Ollama 在本地部署 DeepSeek 模型，和 embedding 模型 mxbai-embed-large，来运行 Generative Agents 项目。 环境12345No LSB modules are available.Distributor ID: UbuntuDescription:    Ubuntu 22.04.5 LTSRelease:">
+<meta property="og:description" content="问题描述 使用 datasets 的 load_dataset 函数从 huggingface 中加载数据集 Matthijs&#x2F;cmu-arctic-xvectors ，无法加载成功，报错 TypeError: &#39;NoneType&#39; object is not callable.  代码：   12345678from datasets import load_datas">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-02-04T01:51:35.000Z">
-<meta property="article:modified_time" content="2025-02-20T08:37:24.032Z">
+<meta property="article:published_time" content="2025-02-20T07:04:26.000Z">
+<meta property="article:modified_time" content="2025-02-20T08:37:02.142Z">
 <meta property="article:author" content="liberow">
-<meta property="article:tag" content="Paper">
-<meta property="article:tag" content="DeepSeek">
+<meta property="article:tag" content="ERROR">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="huggingface">
+<meta property="article:tag" content="datasets">
+<meta property="article:tag" content="AI">
+<meta property="article:tag" content="ML">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇 - Liberow</title>
+  <title>TypeError &#39;NoneType&#39; object is not callable - Liberow</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +218,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇"></span>
+            <span id="subtitle" data-typed-text="TypeError &#39;NoneType&#39; object is not callable"></span>
           
         </div>
 
@@ -225,8 +229,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-02-04 09:51" pubdate>
-          February 4, 2025 am
+        <time datetime="2025-02-20 15:04" pubdate>
+          February 20, 2025 pm
         </time>
       </span>
     
@@ -237,7 +241,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          485 words
+          357 words
         
       </span>
     
@@ -248,7 +252,7 @@
         
         
         
-          5 mins
+          3 mins
         
       </span>
     
@@ -294,73 +298,33 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇</h1>
+            <h1 id="seo-header">TypeError &#39;NoneType&#39; object is not callable</h1>
             
             
               <div class="markdown-body">
                 
-                <p>在原项目的基础上，我们使用 Ollama 在本地部署 DeepSeek 模型，和 embedding 模型 mxbai-embed-large，来运行 Generative Agents 项目。</p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash">No LSB modules are available.<br>Distributor ID: Ubuntu<br>Description:    Ubuntu 22.04.5 LTS<br>Release:        22.04<br>Codename:       jammy<br></code></pre></td></tr></table></figure>
-
-<h2 id="Ollama的安装和模型的本地部署"><a href="#Ollama的安装和模型的本地部署" class="headerlink" title="Ollama的安装和模型的本地部署"></a>Ollama的安装和模型的本地部署</h2><ol>
-<li>在Linux系统安装Ollama</li>
+                <h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><ol>
+<li><p>使用 <code>datasets</code> 的 load_dataset 函数从 huggingface 中加载数据集 Matthijs&#x2F;cmu-arctic-xvectors ，无法加载成功，报错 <code>TypeError: &#39;NoneType&#39; object is not callable</code>.</p>
+</li>
+<li><p>代码：</p>
+</li>
 </ol>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs sh">curl -fsSL https://ollama.com/install.sh | sh<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash">from datasets import load_dataset<br><br>embedding_dataset = load_dataset(<br>    <span class="hljs-string">&#x27;Matthijs/cmu-arctic-xvectors&#x27;</span>, <br>    <span class="hljs-built_in">split</span>=<span class="hljs-string">&#x27;validation&#x27;</span>,<br>    )<br><br>embedding_dataset<br></code></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>报错：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><code class="hljs bash">---------------------------------------------------------------------------<br>TypeError                                 Traceback (most recent call last)<br>Cell In[6], line 6<br>      2 import logging<br>      4 logging.basicConfig(level=logging.DEBUG)<br>----&gt; 6 embedding_dataset = load_dataset(<span class="hljs-string">&#x27;Matthijs/cmu-arctic-xvectors&#x27;</span>, <span class="hljs-built_in">split</span>=<span class="hljs-string">&#x27;validation&#x27;</span>)<br>      8 embedding_dataset<br><br>File /opt/conda/envs/audio/lib/python3.10/site-packages/datasets/load.py:2129, <span class="hljs-keyword">in</span> load_dataset(path, name, data_dir, data_files, <span class="hljs-built_in">split</span>, cache_dir, features, download_config, download_mode, verification_mode, keep_in_memory, save_infos, revision, token, streaming, num_proc, storage_options, trust_remote_code, **config_kwargs)<br>   2124 verification_mode = VerificationMode(<br>   2125     (verification_mode or VerificationMode.BASIC_CHECKS) <span class="hljs-keyword">if</span> not save_infos <span class="hljs-keyword">else</span> VerificationMode.ALL_CHECKS<br>   2126 )<br>   2128 <span class="hljs-comment"># Create a dataset builder</span><br>-&gt; 2129 builder_instance = load_dataset_builder(<br>   2130     path=path,<br>   2131     name=name,<br>   2132     data_dir=data_dir,<br>   2133     data_files=data_files,<br>   2134     cache_dir=cache_dir,<br>   2135     features=features,<br>   2136     download_config=download_config,<br>   2137     download_mode=download_mode,<br>   2138     revision=revision,<br>   2139     token=token,<br>   2140     storage_options=storage_options,<br>   2141     trust_remote_code=trust_remote_code,<br>   2142     _require_default_config_name=name is None,<br>   2143     **config_kwargs,<br>   2144 )<br>   2146 <span class="hljs-comment"># Return iterable dataset in case of streaming</span><br>   2147 <span class="hljs-keyword">if</span> streaming:<br><br>File /opt/conda/envs/audio/lib/python3.10/site-packages/datasets/load.py:1886, <span class="hljs-keyword">in</span> load_dataset_builder(path, name, data_dir, data_files, cache_dir, features, download_config, download_mode, revision, token, storage_options, trust_remote_code, _require_default_config_name, **config_kwargs)<br>   1884 builder_cls = get_dataset_builder_class(dataset_module, dataset_name=dataset_name)<br>   1885 <span class="hljs-comment"># Instantiate the dataset builder</span><br>-&gt; 1886 builder_instance: DatasetBuilder = builder_cls(<br>   1887     cache_dir=cache_dir,<br>   1888     dataset_name=dataset_name,<br>   1889     config_name=config_name,<br>   1890     data_dir=data_dir,<br>   1891     data_files=data_files,<br>   1892     <span class="hljs-built_in">hash</span>=dataset_module.hash,<br>   1893     info=info,<br>   1894     features=features,<br>   1895     token=token,<br>   1896     storage_options=storage_options,<br>   1897     **builder_kwargs,<br>   1898     **config_kwargs,<br>   1899 )<br>   1900 builder_instance._use_legacy_cache_dir_if_possible(dataset_module)<br>   1902 <span class="hljs-built_in">return</span> builder_instance<br><br>TypeError: <span class="hljs-string">&#x27;NoneType&#x27;</span> object is not callable<br></code></pre></td></tr></table></figure>
+
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><ol>
+<li>最初使用的 <code>datasets</code> 版本是3.3.0， 通过版本降级，依次尝试了2.21.0， 2.16.0，都无法解决，最后尝试了2.10.0成功解决(如果使用的Notebook， 版本降级后记得 Restart)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 查看 datasets 版本</span><br>pip show datasets<br><br><span class="hljs-comment"># 版本降级到2.10.0</span><br>pip install datasets==2.10.0<br></code></pre></td></tr></table></figure>
 
 <ol start="2">
-<li>使用Ollama 安装生成模型，  可安装<a target="_blank" rel="noopener" href="https://ollama.com/search">模型列表</a>，我选择了deepseek-v2， 可根据自己的系统配置安装不同的版本。</li>
+<li>降级后的版本</li>
 </ol>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># deepseek-v2:16b </span><br>ollama run deepseek-v2:16b<br><br><span class="hljs-comment"># deepseek-v3:671b</span><br>ollama run deepseek-v3:671b<br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>使用Ollama 安装embedding模型， 可安装<a target="_blank" rel="noopener" href="https://ollama.com/search?c=embedding">模型列表</a></li>
-</ol>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh"><span class="hljs-comment"># mxbai-embed-large </span><br>ollama pull mxbai-embed-large<br></code></pre></td></tr></table></figure>
-
-<h2 id="代码修改"><a href="#代码修改" class="headerlink" title="代码修改"></a>代码修改</h2><ol>
-<li><p>主要修改文件 reverie&#x2F;backend_server&#x2F;persona&#x2F;prompt_template&#x2F;gpt_structure.py, 可参考文件<a target="_blank" rel="noopener" href="https://github.com/liberow/generative_agents/blob/main/reverie/backend_server/persona/prompt_template/gpt_structure.py">gpt_structure.py</a> 中的 model_request 的函数的<code>request_type == &quot;ollama&quot;</code></p>
-</li>
-<li><p>在文件开头添加变量</p>
-</li>
-</ol>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># Ollama API 配置</span><br>OLLAMA_API_URL = <span class="hljs-string">&quot;http://localhost:11434&quot;</span><br>MODEL = <span class="hljs-string">&quot;deepseek/deepseek-chat&quot;</span><br>EMBEDDING_MODEL = <span class="hljs-string">&quot;mxbai-embed-large:latest&quot;</span><br></code></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>修改函数 ChatGPT_single_request(prompt), GPT4_request(prompt), ChatGPT_request(prompt)。</li>
-</ol>
-<p>原代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">completion = openai.ChatCompletion.create(<br>  model=<span class="hljs-string">&quot;gpt-3.5-turbo&quot;</span>, <br>  messages=[&#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: prompt&#125;]<br>)<br><span class="hljs-keyword">return</span> completion[<span class="hljs-string">&quot;choices&quot;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&quot;message&quot;</span>][<span class="hljs-string">&quot;content&quot;</span>]<br></code></pre></td></tr></table></figure>
-
-<p>替换代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">completion = ollama.chat(<br>  model=MODEL,<br>  messages=[&#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: prompt&#125;],<br>)<br><span class="hljs-keyword">return</span> completion[<span class="hljs-string">&#x27;message&#x27;</span>][<span class="hljs-string">&#x27;content&#x27;</span>]<br></code></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>修改函数GPT_request(prompt, gpt_parameter)</li>
-</ol>
-<p>原代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs python">response = openai.Completion.create(<br>            model=gpt_parameter[<span class="hljs-string">&quot;engine&quot;</span>],<br>            prompt=prompt,<br>            temperature=gpt_parameter[<span class="hljs-string">&quot;temperature&quot;</span>],<br>            max_tokens=gpt_parameter[<span class="hljs-string">&quot;max_tokens&quot;</span>],<br>            top_p=gpt_parameter[<span class="hljs-string">&quot;top_p&quot;</span>],<br>            frequency_penalty=gpt_parameter[<span class="hljs-string">&quot;frequency_penalty&quot;</span>],<br>            presence_penalty=gpt_parameter[<span class="hljs-string">&quot;presence_penalty&quot;</span>],<br>            stream=gpt_parameter[<span class="hljs-string">&quot;stream&quot;</span>],<br>            stop=gpt_parameter[<span class="hljs-string">&quot;stop&quot;</span>],)<br><span class="hljs-keyword">return</span> response.choices[<span class="hljs-number">0</span>].text<br></code></pre></td></tr></table></figure>
-
-<p>替换代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python">completion = ollama.chat(<br>  model=MODEL,<br>  messages=[&#123;<span class="hljs-string">&quot;role&quot;</span>: <span class="hljs-string">&quot;user&quot;</span>, <span class="hljs-string">&quot;content&quot;</span>: prompt&#125;],<br>)<br><span class="hljs-keyword">return</span> completion[<span class="hljs-string">&#x27;message&#x27;</span>][<span class="hljs-string">&#x27;content&#x27;</span>]<br></code></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>修改embeding 模型</li>
-</ol>
-<p>原代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_embedding</span>(<span class="hljs-params">text, model=<span class="hljs-string">&quot;text-embedding-ada-002&quot;</span></span>):<br>  text = text.replace(<span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot; &quot;</span>)<br>  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> text: <br>    text = <span class="hljs-string">&quot;this is blank&quot;</span><br>  <span class="hljs-keyword">return</span> openai.Embedding.create(<br>          <span class="hljs-built_in">input</span>=[text], model=model)[<span class="hljs-string">&#x27;data&#x27;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&#x27;embedding&#x27;</span>]<br></code></pre></td></tr></table></figure>
-
-<p>替换代码：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">get_embedding</span>(<span class="hljs-params">text, model=EMBEDDING_MODEL</span>):<br>  text = text.replace(<span class="hljs-string">&quot;\n&quot;</span>, <span class="hljs-string">&quot; &quot;</span>)<br>  <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> text: <br>    text = <span class="hljs-string">&quot;this is blank&quot;</span><br>  <br>  response = ollama.embeddings(model=model, prompt=text)<br>  embedding = response[<span class="hljs-string">&quot;embedding&quot;</span>]<br>  <span class="hljs-keyword">return</span> embedding<br></code></pre></td></tr></table></figure>
-
-<h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>运行部分不需要做任何修改，可参考原<a target="_blank" rel="noopener" href="https://github.com/joonspk-research/generative_agents/blob/main/README.md">README</a>文件, </p>
-<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ol>
-<li><p>论文PDF: <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2304.03442">Generative Agents: Interactive Simulacra of Human Behavior</a></p>
-</li>
-<li><p>论文作者提供代码: <a target="_blank" rel="noopener" href="https://github.com/joonspk-research/generative_agents">Github</a></p>
-</li>
-<li><p>修改代码参考: <a target="_blank" rel="noopener" href="https://github.com/liberow/generative_agents">liberow</a></p>
-</li>
-</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs bash">Name: datasets<br>Version: 2.10.0<br>Summary: HuggingFace community-driven open-source library of datasets<br>Home-page: https://github.com/huggingface/datasets<br>Author: HuggingFace Inc.<br>Author-email: thomas@huggingface.co<br>License: Apache 2.0<br>Location: /opt/conda/envs/audio/lib/python3.10/site-packages<br>Requires: aiohttp, dill, fsspec, huggingface-hub, multiprocess, numpy, packaging, pandas, pyarrow, pyyaml, requests, responses, tqdm, xxhash<br>Required-by: evaluate<br></code></pre></td></tr></table></figure>
 
                 
               </div>
@@ -379,7 +343,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/Agent/" class="category-chain-item">Agent</a>
+  <a href="/categories/ERROR/" class="category-chain-item">ERROR</a>
   
   
 
@@ -394,9 +358,17 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/Paper/" class="print-no-link">#Paper</a>
+        <a href="/tags/ERROR/" class="print-no-link">#ERROR</a>
       
-        <a href="/tags/DeepSeek/" class="print-no-link">#DeepSeek</a>
+        <a href="/tags/Python/" class="print-no-link">#Python</a>
+      
+        <a href="/tags/huggingface/" class="print-no-link">#huggingface</a>
+      
+        <a href="/tags/datasets/" class="print-no-link">#datasets</a>
+      
+        <a href="/tags/AI/" class="print-no-link">#AI</a>
+      
+        <a href="/tags/ML/" class="print-no-link">#ML</a>
       
     </div>
   
@@ -408,8 +380,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇</div>
-      <div>https://liberow.github.io/2025/02/04/agent/generative_agents_local/</div>
+      <div>TypeError &#39;NoneType&#39; object is not callable</div>
+      <div>https://liberow.github.io/2025/02/20/error/NoneType/</div>
     </div>
     <div class="license-meta">
       
@@ -421,7 +393,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>February 4, 2025</div>
+          <div>February 20, 2025</div>
         </div>
       
       
@@ -453,18 +425,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/02/20/error/NoneType/" title="TypeError &#39;NoneType&#39; object is not callable">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">TypeError &#39;NoneType&#39; object is not callable</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/02/04/agent/generative_agents/" title="使用DeepSeek和Ollama在Linux本地部署Embedding模型来运行斯坦福AI小镇">
-                        <span class="hidden-mobile">使用DeepSeek和Ollama在Linux本地部署Embedding模型来运行斯坦福AI小镇</span>
+                      <a href="/2025/02/04/agent/generative_agents_local/" title="使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇">
+                        <span class="hidden-mobile">使用Ollama在Linux本地部署DeepSeek来运行斯坦福AI小镇</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
